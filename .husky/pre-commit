@@ -1,4 +1,6 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+# Rodar formatação de código antes do commit
+npm run format
 
+# Executar lint-staged para verificar e corrigir arquivos no staging
 npx --no-install lint-staged
+

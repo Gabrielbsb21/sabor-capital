@@ -1,19 +1,14 @@
 'use client';
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import { MdMenu } from 'react-icons/md';
 
 import MobileMenu from '../MobileMenu';
-import { MdMenu } from 'react-icons/md';
 
 const Header = () => {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
-  const pathUrl = usePathname();
 
   // Sticky menu
   const handleStickyMenu = () => {
